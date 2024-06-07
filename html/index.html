@@ -10,61 +10,19 @@
 			integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
 			crossorigin="anonymous"
 		/>
-		<style>
-			.custom-navbar {
-				padding: 1rem 0;
-			}
-
-			.custom-nav-items .nav-link {
-				margin-right: 1rem;
-				font-size: 1.2rem;
-			}
-
-			.header-image {
-				background-image: url("../img/HeaderImage.jpg");
-				background-size: cover;
-				background-position: center;
-				height: 90vh;
-			}
-
-			@media (min-width: 600px) {
-				.header-image {
-					height: 90vh;
-				}
-			}
-
-			.header-title,
-			.header-subtitle {
-				color: white;
-			}
-			.card-img-top {
-				width: 100%;
-				height: 50vh;
-				object-fit: cover;
-			}
-			.card {
-				margin-top: 2rem;
-				height: 95%;
-			}
-			/* Resize images when navbar becomes collapsible */
-			@media (max-width: 1000px) {
-				.card-img-top-expert {
-					height: 100vh;
-				}
-			}
-		</style>
+		<link rel="stylesheet" href="../css/styles.css" />
 	</head>
 	<body>
 		<!------------------------------------ Navbar ------------------------------------>
 		<nav
 			class="navbar navbar-expand-lg fixed-top custom-navbar"
 			style="
-				background-color: #e3f2fd;
+				background-color: #2c3e50;
 				box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
 			"
 		>
 			<div class="container-fluid align-items-center">
-				<a class="navbar-brand" style="color: blue" href="#"
+				<a class="navbar-brand" style="color: #ffffff" href="#"
 					>Cabinet Dans Terre</a
 				>
 				<button
@@ -75,25 +33,42 @@
 					aria-controls="navbarSupportedContent"
 					aria-expanded="false"
 					aria-label="Toggle navigation"
+					style="background-color: #ffffff"
 				>
 					<span class="navbar-toggler-icon"></span>
 				</button>
 				<div class="collapse navbar-collapse" id="navbarSupportedContent">
 					<ul class="navbar-nav ms-auto mb-2 mb-lg-0 custom-nav-items">
 						<li class="nav-item">
-							<a class="nav-link active" aria-current="page" href="#services"
+							<a
+								class="nav-link active"
+								aria-current="page"
+								href="#services"
+								style="color: #ffffff"
 								>Nos Services</a
 							>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link active" href="#experts">Nos Experts</a>
+							<a class="nav-link active" href="#experts" style="color: #ffffff"
+								>Nos Experts</a
+							>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link active" href="#contact">Contactez-Nous</a>
+							<a class="nav-link active" href="#contact" style="color: #ffffff"
+								>Contactez-Nous</a
+							>
 						</li>
 						<li class="nav-item al">
 							<a href="booking.html">
-								<button class="btn btn-outline-primary btn-lg" type="submit">
+								<button
+									class="btn btn-lg"
+									type="submit"
+									style="
+										color: #4a4a4a;
+										border-color: #a6e3e9;
+										background-color: #a6e3e9;
+									"
+								>
 									Prendre Rendez-Vous
 								</button>
 							</a>
@@ -105,22 +80,35 @@
 
 		<!------------------------------------ Header ------------------------------------>
 		<header
-			class="header-image d-flex align-items-center justify-content-center text-center img-fluid"
+			class="header-image d-flex align-items-center justify-content-center text-center"
 		>
-			<div>
+			<div
+				style="
+					background-color: rgba(166, 227, 233, 0.5);
+					padding: 2rem;
+					border-radius: 20px;
+				"
+			>
 				<h1 class="header-title">Le Cabinet Dans Terre</h1>
 				<h2 class="header-subtitle">Pour tous vos Besoins d'Hygiène Oraux</h2>
-				<a href="booking.html"
-					><button class="btn btn-primary btn-lg">
+				<a href="booking.html">
+					<button
+						class="btn btn-lg"
+						style="
+							color: #4a4a4a;
+							border-color: #a6e3e9;
+							background-color: #a6e3e9;
+						"
+					>
 						Prendre Rendez-Vous
-					</button></a
-				>
+					</button>
+				</a>
 			</div>
 		</header>
 
 		<!------------------------------------ Services ------------------------------------>
 		<section id="services" class="container py-5">
-			<h2>Nos Services</h2>
+			<h2 style="color: #333333">Nos Services</h2>
 			<div class="row">
 				<div class="col-lg-6">
 					<div class="card">
@@ -132,8 +120,12 @@
 							/>
 						</a>
 						<div class="card-body">
-							<h5 class="card-title">Restoration Dentaire</h5>
-							<p class="card-text">Pour vos couronnes et vos plombages!</p>
+							<h5 class="card-title" style="color: #333333">
+								Restoration Dentaire
+							</h5>
+							<p class="card-text" style="color: #4a4a4a">
+								Pour vos couronnes et vos plombages!
+							</p>
 						</div>
 					</div>
 				</div>
@@ -147,8 +139,12 @@
 							/>
 						</a>
 						<div class="card-body">
-							<h5 class="card-title">Soins Dentaires pour Enfants</h5>
-							<p class="card-text">Pour maintenir leurs beaux sourires!</p>
+							<h5 class="card-title" style="color: #333333">
+								Soins Dentaires pour Enfants
+							</h5>
+							<p class="card-text" style="color: #4a4a4a">
+								Pour maintenir leurs beaux sourires!
+							</p>
 						</div>
 					</div>
 				</div>
@@ -164,8 +160,12 @@
 							/>
 						</a>
 						<div class="card-body">
-							<h5 class="card-title">Blanchiment des Dents</h5>
-							<p class="card-text">Redonnez son éclat à votre sourire!</p>
+							<h5 class="card-title" style="color: #333333">
+								Blanchiment des Dents
+							</h5>
+							<p class="card-text" style="color: #4a4a4a">
+								Redonnez son éclat à votre sourire!
+							</p>
 						</div>
 					</div>
 				</div>
@@ -179,8 +179,10 @@
 							/>
 						</a>
 						<div class="card-body">
-							<h5 class="card-title">Chirurgie Orale</h5>
-							<p class="card-text">Laissez nos experts soccuper de vous!</p>
+							<h5 class="card-title" style="color: #333333">Chirurgie Orale</h5>
+							<p class="card-text" style="color: #4a4a4a">
+								Laissez nos experts soccuper de vous!
+							</p>
 						</div>
 					</div>
 				</div>
@@ -189,7 +191,7 @@
 
 		<!------------------------------------ Experts ------------------------------------>
 		<section id="experts" class="container py-5">
-			<h2>Nos Experts</h2>
+			<h2 style="color: #333333">Nos Experts</h2>
 			<div class="row">
 				<div class="col-lg-4">
 					<div class="card">
@@ -199,8 +201,10 @@
 							alt="Expert 1"
 						/>
 						<div class="card-body">
-							<h5 class="card-title">Dr. James Denton</h5>
-							<p class="card-text">
+							<h5 class="card-title" style="color: #333333">
+								Dr. James Denton
+							</h5>
+							<p class="card-text" style="color: #4a4a4a">
 								Le Dr James Denton est spécialisé en orthodontie, aidant les
 								patients à obtenir des dents et des mâchoires correctement
 								alignées. Il est compétent dans l'application de bagues,
@@ -220,8 +224,8 @@
 							alt="Expert 2"
 						/>
 						<div class="card-body">
-							<h5 class="card-title">Dr. Max Molarn</h5>
-							<p class="card-text">
+							<h5 class="card-title" style="color: #333333">Dr. Max Molarn</h5>
+							<p class="card-text" style="color: #4a4a4a">
 								Le Dr Max Molarn est un expert en endodontie, la branche de la
 								dentisterie qui traite de la pulpe dentaire et des canaux
 								radiculaires. Connu pour sa précision et son approche douce, le
@@ -240,9 +244,9 @@
 							class="card-img-top card-img-top-expert img-fluid"
 							alt="Expert 3"
 						/>
-						<div class="card-body">
+						<div class="card-body" style="color: #333333">
 							<h5 class="card-title">Dr. Emma Pearlywhite</h5>
-							<p class="card-text">
+							<p class="card-text" style="color: #4a4a4a">
 								Le Dr Emma Pearlywhite est spécialisée en dentisterie
 								esthétique, se concentrant sur l'amélioration de l'apparence des
 								sourires de ses patients. Avec une vaste expérience en
@@ -258,7 +262,11 @@
 		</section>
 
 		<!------------------------------------ Footer ------------------------------------>
-		<section id="contact" class="bg-light text-dark py-4">
+		<section
+			id="contact"
+			class="py-4"
+			style="background-color: #2c3e50; color: white"
+		>
 			<div class="container">
 				<div class="row">
 					<div class="col-md-4" style="font-size: large">
